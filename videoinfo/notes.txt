@@ -1,0 +1,5 @@
+HTML
+- can get details about files that a user purposefully feeds into it
+
+Electron
+- can read any arbitrary file off the machine at any time
