@@ -3,3 +3,10 @@ HTML
 
 Electron
 - can read any arbitrary file off the machine at any time
+
+Electron app should hold:
+- specific configuration and logic
+
+Web app should:
+- be kept as generic as possible to
+- increase possible reuse on plain web
