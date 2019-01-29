@@ -10,3 +10,13 @@ Electron app should hold:
 Web app should:
 - be kept as generic as possible to
 - increase possible reuse on plain web
+
+Steps in communication process:
+1. send info to electron from main window
+ipcRenderer.send('video:submit', path);
+
+2. receive info into Electron
+- 'video:submit' must match the first arg of ipcRenderer.send
+
+3. send info from electron to main main window
+4. receive info into main window
