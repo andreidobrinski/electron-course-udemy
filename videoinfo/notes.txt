@@ -17,6 +17,7 @@ ipcRenderer.send('video:submit', path);
 
 2. receive info into Electron
 - 'video:submit' must match the first arg of ipcRenderer.send
+ipcMain.on
 
-3. send info from electron to main main window
+3. send info from electron to main window
 4. receive info into main window
