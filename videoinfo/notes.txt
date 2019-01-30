@@ -20,4 +20,7 @@ ipcRenderer.send('video:submit', path);
 ipcMain.on
 
 3. send info from electron to main window
+mainWindow.webContents.send
+
 4. receive info into main window
+ipcRenderer.on

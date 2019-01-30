@@ -12,6 +12,8 @@
     </button>
   </form>
 
+  <h1 id="result"></h1>
+
   <script>
     const electron = require('electron');
     const { ipcRenderer } = electron;
@@ -22,6 +24,11 @@
 
       // send info to electron from main window
       ipcRenderer.send('video:submit', path);
+    });
+
+    ipcRenderer.on('video:metadata', (event, duration) => {
+      // receive info into main window
+      document.querySelector('#result').innerHTML = `Video is ${duration} seconds`;
     });
   </script>
 </body>
