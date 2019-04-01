@@ -10,6 +10,7 @@ class MainWindow extends BrowserWindow {
       frame: false,
       resizable: false,
       show: false,
+      webPreferences: { backgroundThrottling: false },
     });
 
     this.loadURL(url);
